@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SRC Sports Academy</title>
+  <link rel="stylesheet" href="shared.css" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- ================= TOP INFO BAR (UNTOUCHED) ================= -->
+  <div class="top-bar">
+    <div class="top-left">
+      <span>📍 Pentecost University, Accra</span>
+      <span>🕒 Mon – Fri: 8:00 AM – 5:00 PM</span>
+    </div>
+    <div class="top-right">
+      <span>✉ info@srcsportsacademy.edu</span>
+      <span>📞 +233 590 638 265</span>
+    </div>
+  </div>
+
+  <!-- ================= MAIN HEADER (UNTOUCHED) ================= -->
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html">SRC Sports Academy</a>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" id="main-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="register.html">Register</a>
+      <a href="new-activities.html">New Activities</a>
+      <a href="book-online.html">Book Online</a>
+      <a href="events.html">Events</a>
+      <a href="book-online.html" class="track-btn">Join Now</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero-section">
+      <video
+        class="hero-video"
+        poster="images/basketball.jpg"
+        autoplay
+        muted
+        loop
+        playsinline
+        webkit-playsinline
+        preload="auto">
+        <source src="vidoes/hero.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-copy">
+        <p>Elevating student athletes with world-class programs</p>
+        <h1>SRC Sports Academy — Where Pentecost University Talent Meets Modern Training</h1>
+        <p>
+          Explore our sports offerings, book training, join the academy,
+          and follow the latest achievements from our players and coaches.
+        </p>
+        <div class="hero-actions">
+          <input type="search" placeholder="Search available programs and updates" />
+          <a class="cta" href="book-online.html">Book Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIAL SECTION ================= -->
+    <section class="testimonial-section">
+      <div class="testimonial-header">
+        <span class="testimonial-tag">TESTIMONIALS</span>
+        <h2>Voices of Our Athletes</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="testimonial-slider">
+        <div class="testimonial-track" id="testimonial-track">
+
+          <!-- CARD 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-top">
+              <div class="avatar">A</div>
+              <div class="person">
+                <strong>Angela Brown</strong>
+                <span>Athlete</span>
+              </div>
+              <div class="quote-icon">❝</div>
+            </div>
+            <p>"Great training environment and professional coaching.
+               I improved my skills and confidence tremendously."</p>
+            <div class="stars">★★★★★</div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-top">
+              <div class="avatar">J</div>
+              <div class="person">
+                <strong>John Asare</strong>
+                <span>Team Captain</span>
+              </div>
+              <div class="quote-icon">❝</div>
+            </div>
+            <p>"The academy helped me prepare for competitions
+               and improve my leadership skills."</p>
+            <div class="stars">★★★★★</div>
+          </div>
+
+           <!-- CARD 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-top">
+              <div class="avatar">J</div>
+              <div class="person">
+                <strong>John Asare</strong>
+                <span>Team Captain</span>
+              </div>
+              <div class="quote-icon">❝</div>
+            </div>
+            <p>"The academy helped me prepare for competitions
+               and improve my leadership skills."</p>
+            <div class="stars">★★★★★</div>
+          </div>
+
+           <!-- CARD 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-top">
+              <div class="avatar">J</div>
+              <div class="person">
+                <strong>John Asare</strong>
+                <span>Team Captain</span>
+              </div>
+              <div class="quote-icon">❝</div>
+            </div>
+            <p>"The academy helped me prepare for competitions
+               and improve my leadership skills."</p>
+            <div class="stars">★★★★★</div>
+          </div>
+
+           <!-- CARD 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-top">
+              <div class="avatar">J</div>
+              <div class="person">
+                <strong>John Asare</strong>
+                <span>Team Captain</span>
+              </div>
+              <div class="quote-icon">❝</div>
+            </div>
+            <p>"The academy helped me prepare for competitions
+               and improve my leadership skills."</p>
+            <div class="stars">★★★★★</div>
+          </div>
+
+
+          <!-- CARD 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-top">
+              <div class="avatar">A</div>
+              <div class="person">
+                <strong>Ama Smith</strong>
+                <span>Student Athlete</span>
+              </div>
+              <div class="quote-icon">❝</div>
+            </div>
+            <p>"I love the facilities and the coaching team.
+               Training here has been an amazing experience."</p>
+            <div class="stars">★★★★★</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- DOTS -->
+      <div class="slider-dots" id="slider-dots">
+        <span class="active" data-index="0"></span>
+        <span data-index="1"></span>
+        <span data-index="2"></span>
+      </div>
+    </section>
+
+    <!-- ================= SPORTS TICKER ================= -->
+    <section class="sports-section">
+      <div class="section-heading">
+        <h2>Our Sports Programs</h2>
+      </div>
+      <div class="ticker-wrapper">
+        <div class="ticker-track">
+          <div class="sport-card">
+            <img src="images/football.jpg" alt="Football training session">
+            <div class="sport-card-content">
+              <h3>Football</h3>
+              <p>Elite team drills and university league preparation.</p>
+            </div>
+          </div>
+          <div class="sport-card">
+            <img src="images/vollyball.jpg" alt="Volleyball team practice">
+            <div class="sport-card-content">
+              <h3>Volleyball</h3>
+              <p>Powerful serves and competitive teamwork.</p>
+            </div>
+          </div>
+          <div class="sport-card">
+            <img src="images/basketball.jpg" alt="Basketball action shot">
+            <div class="sport-card-content">
+              <h3>Basketball</h3>
+              <p>Fast-paced action and strategic play.</p>
+            </div>
+          </div>
+          <div class="sport-card">
+            <img src="images/fight.jpg" alt="Taekwondo sparring">
+            <div class="sport-card-content">
+              <h3>Taekwondo</h3>
+              <p>Strength, discipline, and sparring excellence.</p>
+            </div>
+          </div>
+          <div class="sport-card">
+            <img src="images/big.jpg" alt="Gymnastics performance">
+            <div class="sport-card-content">
+              <h3>Gymnastics</h3>
+              <p>Graceful performance and athletic strength.</p>
+            </div>
+          </div>
+          <!-- DUPLICATES for infinite scroll -->
+          <div class="sport-card">
+            <img src="images/football.jpg" alt="Football training session">
+            <div class="sport-card-content">
+              <h3>Football</h3>
+              <p>Elite team drills and university league preparation.</p>
+            </div>
+          </div>
+          <div class="sport-card">
+            <img src="images/vollyball.jpg" alt="Volleyball team practice">
+            <div class="sport-card-content">
+              <h3>Volleyball</h3>
+              <p>Powerful serves and competitive teamwork.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HIGHLIGHT PANEL ================= -->
+    <section class="highlight-panel">
+      <div class="highlight-card">
+        <img src="images/champ.jpg" alt="Championship">
+        <div class="highlight-overlay">
+          <h3>Upcoming Championship</h3>
+          <p>Our academy teams are preparing for the national university championship.
+             Intensive training sessions are currently ongoing.</p>
+          <a href="events.html" class="highlight-btn">Learn More →</a>
+        </div>
+      </div>
+      <div class="highlight-card">
+        <img src="images/player.jpg" alt="Player Spotlight">
+        <div class="highlight-overlay">
+          <h3>Player Spotlight</h3>
+          <p>Meet our top-performing student athletes who continue to break records
+             and represent the academy with excellence.</p>
+          <a href="blog.html" class="highlight-btn">View Profile →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MEDIA SECTION ================= -->
+    <section class="media-section">
+      <div class="media-container">
+        <div class="section-heading">
+          <span class="media-tag">TRAINING MEDIA</span>
+          <h2>Training Highlights</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/4-Y_27xTjqM"
+            title="Sports Highlights"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER (UNTOUCHED) ================= -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <h2 class="footer-logo">SRC Sports Academy</h2>
+        <p>SRC Sports Academy develops champions through professional coaching, competitive sports, and community engagement.</p>
+        <div class="footer-contact-item">📍 Pentecost University, Accra Ghana</div>
+        <div class="footer-contact-item">📞 +233 590 638 265</div>
+        <div class="footer-contact-item">✉ info@srcsportsacademy.edu</div>
+      </div>
+
+      <div class="footer-links">
+        <h3>Company</h3>
+        <a href="about.html">About Us</a>
+        <a href="events.html">Events</a>
+        <a href="blog.html">News</a>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+
+      <div class="footer-links">
+        <h3>Services</h3>
+        <a href="new-activities.html">Sports Programs</a>
+        <a href="book-online.html">Book Training</a>
+        <a href="register.html">Register</a>
+        <a href="#">Community Programs</a>
+      </div>
+
+      <div class="footer-links">
+        <h3>Support</h3>
+        <a href="#">Contact Us</a>
+        <a href="#">FAQs</a>
+        <a href="#">Help Center</a>
+        <a href="#">Feedback</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="X / Twitter">X</a>
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="WhatsApp">💬</a>
+      </div>
+      <p>© 2026 SRC Sports Academy. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJ+o3p2RzPsueBjr3d2pQ4KwuFtdqTtwcGm0A="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.0/dist/vanilla-tilt.min.js"></script>
+
+  <script>
+    /* ---- HAMBURGER MENU ---- */
+    const toggle = document.querySelector('.nav-toggle');
+    const nav    = document.getElementById('main-nav');
+
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('active');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open);
+      document.body.classList.toggle('nav-open', open);
+    });
+
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('active');
+        toggle.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('nav-open');
+      });
+    });
+
+    /* ---- TESTIMONIAL SLIDER ---- */
+    const track   = document.getElementById('testimonial-track');
+    const dots    = document.querySelectorAll('#slider-dots span');
+    let current   = 0;
+    let autoPlay;
+
+    function goTo(index) {
+      const cards = track.querySelectorAll('.testimonial-card');
+      const cardW = cards[0].offsetWidth + 20;
+      current = index;
+      track.style.transform = `translateX(-${current * cardW}px)`;
+      dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    }
+
+    function next() {
+      const total = track.querySelectorAll('.testimonial-card').length;
+      goTo((current + 1) % total);
+    }
+
+    dots.forEach(dot => dot.addEventListener('click', () => goTo(+dot.dataset.index)));
+
+    autoPlay = setInterval(next, 4000);
+    track.addEventListener('mouseenter', () => clearInterval(autoPlay));
+    track.addEventListener('mouseleave', () => { autoPlay = setInterval(next, 4000); });
+
+    /* Touch swipe */
+    let startX = 0;
+    track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+    track.addEventListener('touchend', e => {
+      const diff = startX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 40) diff > 0 ? next() : goTo(Math.max(0, current - 1));
+    });
+  </script>
+
+  <script src="app.js"></script>
+</body>
+</html>

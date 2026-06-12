@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | SRC Sports Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
+  <link rel="stylesheet" href="register.css" />
+</head>
+<body>
+
+  <!-- ================= TOP INFO BAR ================= -->
+  <div class="top-bar">
+    <div class="top-left">
+      <span>📍 Pentecost University, Accra</span>
+      <span>🕒 Mon – Fri: 8:00 AM – 5:00 PM</span>
+    </div>
+    <div class="top-right">
+      <span>✉ info@srcsportsacademy.edu</span>
+      <span>📞 +233 590 638 265</span>
+    </div>
+  </div>
+
+  <!-- ================= MAIN HEADER ================= -->
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html">SRC Sports Academy</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="register.html">Register</a>
+      <a href="new-activities.html">New Activities</a>
+      <a href="book-online.html">Book Online</a>
+      <a href="events.html">Events</a>
+      <a href="book-online.html" class="track-btn">Join Now</a>
+    </nav>
+  </header>
+
+  <!-- ================= REGISTER MAIN ================= -->
+  <main class="register-page">
+
+    <!-- DECORATIVE BACKGROUND SHAPES -->
+    <div class="bg-shape shape-1" aria-hidden="true"></div>
+    <div class="bg-shape shape-2" aria-hidden="true"></div>
+    <div class="bg-shape shape-3" aria-hidden="true"></div>
+
+    <section class="register-hero">
+
+      <!-- LEFT CONTENT -->
+      <div class="register-content">
+
+        <span class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          Join the Academy
+        </span>
+
+        <h1>Start Your <em>Athletic</em><br>Journey Today</h1>
+
+        <p class="lead">
+          Register for professional training programs and receive exclusive
+          academy updates, events, and performance insights.
+        </p>
+
+        <ul class="benefits">
+          <li>
+            <span class="benefit-icon">🏅</span>
+            <div>
+              <strong>Professional Coaching</strong>
+              <p>Trained coaches with national competition experience</p>
+            </div>
+          </li>
+          <li>
+            <span class="benefit-icon">🏟️</span>
+            <div>
+              <strong>Modern Training Facilities</strong>
+              <p>State-of-the-art equipment and training grounds</p>
+            </div>
+          </li>
+          <li>
+            <span class="benefit-icon">🏆</span>
+            <div>
+              <strong>Competition Opportunities</strong>
+              <p>Inter-university and national tournaments</p>
+            </div>
+          </li>
+          <li>
+            <span class="benefit-icon">📈</span>
+            <div>
+              <strong>Athlete Development Support</strong>
+              <p>Nutrition, mental fitness, and progress tracking</p>
+            </div>
+          </li>
+        </ul>
+
+        <!-- MINI STATS -->
+        <div class="mini-stats">
+          <div class="mini-stat">
+            <span class="mini-num">200+</span>
+            <span class="mini-label">Athletes</span>
+          </div>
+          <div class="mini-stat">
+            <span class="mini-num">10+</span>
+            <span class="mini-label">Programs</span>
+          </div>
+          <div class="mini-stat">
+            <span class="mini-num">95%</span>
+            <span class="mini-label">Success</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT FORM CARD -->
+      <div class="form-card">
+
+        <div class="form-card-header">
+          <h2>Create Your Registration</h2>
+          <p>Takes less than 2 minutes</p>
+        </div>
+
+        <form id="register-form" novalidate>
+
+          <div class="field-group">
+            <label for="full-name">Full Name</label>
+            <div class="input-wrap">
+              <span class="input-icon">👤</span>
+              <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required />
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label for="email">Email Address</label>
+            <div class="input-wrap">
+              <span class="input-icon">✉</span>
+              <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label for="interest">Program Interest</label>
+            <div class="input-wrap select-wrap">
+              <select id="interest" name="interest" required>
+                <option value="">Choose a program</option>
+                <option>Football</option>
+                <option>Rugby</option>
+                <option>Volleyball</option>
+                <option>Taekwondo</option>
+                <option>Wrestling</option>
+                <option>Gymnastics</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field-group checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" id="newsletter" name="newsletter" />
+              <span class="checkmark"></span>
+              Subscribe to academy updates &amp; newsletters
+            </label>
+          </div>
+
+          <div class="field-group captcha-group">
+            <label for="captcha-answer">
+              Verification: <span id="captcha-challenge">What is 6 + 2?</span>
+            </label>
+            <input type="text" id="captcha-answer" name="captcha-answer" required autocomplete="off" placeholder="Your answer" />
+          </div>
+
+          <button type="submit" class="cta">
+            <span>Submit Registration</span>
+            <span class="cta-arrow">→</span>
+          </button>
+
+          <p id="register-message" class="form-message"></p>
+
+          <p class="form-note">🔒 Your information is secure and never shared.</p>
+
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- ================= MODERN FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+
+      <!-- BRAND -->
+      <div class="footer-brand">
+        <h2 class="footer-logo">SRC Sports Academy</h2>
+        <p>SRC Sports Academy develops champions through professional coaching, competitive sports, and community engagement.</p>
+        <div class="footer-contact-item">📍 Pentecost University, Accra Ghana</div>
+        <div class="footer-contact-item">📞 +233 590 638 265</div>
+        <div class="footer-contact-item">✉ info@srcsportsacademy.edu</div>
+      </div>
+
+      <!-- COMPANY -->
+      <div class="footer-links">
+        <h3>Company</h3>
+        <a href="about.html">About Us</a>
+        <a href="events.html">Events</a>
+        <a href="blog.html">News</a>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+
+      <!-- SERVICES -->
+      <div class="footer-links">
+        <h3>Services</h3>
+        <a href="new-activities.html">Sports Programs</a>
+        <a href="book-online.html">Book Training</a>
+        <a href="register.html">Register</a>
+        <a href="#">Community Programs</a>
+      </div>
+
+      <!-- SUPPORT -->
+      <div class="footer-links">
+        <h3>Support</h3>
+        <a href="#">Contact Us</a>
+        <a href="#">FAQs</a>
+        <a href="#">Help Center</a>
+        <a href="#">Feedback</a>
+      </div>
+
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="footer-bottom">
+      <div class="social-icons">
+        <a href="#">f</a>
+        <a href="#">X</a>
+        <a href="#">📷</a>
+        <a href="#">💬</a>
+      </div>
+      <p>© 2026 SRC Sports Academy. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-3.6.0.min.js"><\/script>')</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.0/dist/vanilla-tilt.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

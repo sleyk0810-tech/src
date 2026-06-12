@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events | SRC Sports Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
+  <link rel="stylesheet" href="events.css" />
+</head>
+<body>
+
+  <!-- ================= TOP INFO BAR ================= -->
+  <div class="top-bar">
+    <div class="top-left">
+      <span>📍 Pentecost University, Accra</span>
+      <span>🕒 Mon – Fri: 8:00 AM – 5:00 PM</span>
+    </div>
+    <div class="top-right">
+      <span>✉ info@srcsportsacademy.edu</span>
+      <span>📞 +233 590 638 265</span>
+    </div>
+  </div>
+
+  <!-- ================= MAIN HEADER ================= -->
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html">SRC Sports Academy</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="register.html">Register</a>
+      <a href="new-activities.html">New Activities</a>
+      <a href="book-online.html">Book Online</a>
+      <a href="events.html">Events</a>
+      <a href="book-online.html" class="track-btn">Join Now</a>
+    </nav>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main>
+
+    <!-- HERO -->
+    <section class="hero-section">
+      <div class="hero-bg-blob b1" aria-hidden="true"></div>
+      <div class="hero-bg-blob b2" aria-hidden="true"></div>
+      <div class="hero-wrapper">
+
+        <!-- LEFT TEXT -->
+        <div class="hero-copy">
+          <span class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Upcoming Competition Calendar
+          </span>
+          <h1>Events, Fixtures &amp;<br><em>Training Sessions</em></h1>
+          <p>
+            Plan your attendance using our event timeline and discover new
+            community fixtures across SRC Sports Academy programs.
+          </p>
+          <div class="hero-meta">
+            <div class="meta-pill">📅 May – July 2026</div>
+            <div class="meta-pill">🏟️ Pentecost University</div>
+            <div class="meta-pill">🎽 5 Sports</div>
+          </div>
+          <a href="book-online.html" class="hero-cta">Book a Session →</a>
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="hero-image">
+          <div class="image-frame">
+            <img src="images/event.jpg" alt="SRC Sports Academy event schedule preview" />
+            <div class="image-badge">
+              <span class="badge-live"></span>
+              Live Events
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- UPCOMING SCHEDULE SLIDER -->
+    <section class="schedule-section">
+
+      <div class="section-header">
+        <span class="section-eyebrow">Events</span>
+        <h2>Upcoming Schedule</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="slider-outer">
+        <button class="nav nav-prev" aria-label="Previous slide">‹</button>
+
+        <div class="schedule-slider">
+          <div class="schedule-track" id="track">
+
+            <div class="schedule-card">
+              <div class="card-date">
+                <span class="date-month">MAY</span>
+                <span class="date-day">20</span>
+              </div>
+              <div class="card-body">
+                <span class="card-tag">Football</span>
+                <h3>University Football Trials</h3>
+                <p>Open training and university trials at main stadium. All skill levels welcome.</p>
+                <span class="card-time">⏰ 08:00 AM — Main Stadium</span>
+              </div>
+            </div>
+
+            <div class="schedule-card">
+              <div class="card-date">
+                <span class="date-month">MAY</span>
+                <span class="date-day">27</span>
+              </div>
+              <div class="card-body">
+                <span class="card-tag">Volleyball</span>
+                <h3>Community League Match Day</h3>
+                <p>Volleyball league match day with youth team showcase and spectator access.</p>
+                <span class="card-time">⏰ 10:00 AM — Indoor Court</span>
+              </div>
+            </div>
+
+            <div class="schedule-card">
+              <div class="card-date">
+                <span class="date-month">JUN</span>
+                <span class="date-day">05</span>
+              </div>
+              <div class="card-body">
+                <span class="card-tag">Martial Arts</span>
+                <h3>Open Martial Arts Clinic</h3>
+                <p>Taekwondo and Judo coaching clinic open to students and community members.</p>
+                <span class="card-time">⏰ 02:00 PM — Martial Arts Hall</span>
+              </div>
+            </div>
+
+            <div class="schedule-card">
+              <div class="card-date">
+                <span class="date-month">JUN</span>
+                <span class="date-day">14</span>
+              </div>
+              <div class="card-body">
+                <span class="card-tag">Wrestling</span>
+                <h3>Wrestling Skills Tournament</h3>
+                <p>Inter-university wrestling tournament for students and local clubs.</p>
+                <span class="card-time">⏰ 09:00 AM — Training Field B</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <button class="nav nav-next" aria-label="Next slide">›</button>
+      </div>
+
+      <div class="dots event-dots" id="dots">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </section>
+
+    <!-- WEEKLY SCHEDULE TABLE -->
+    <section class="weekly-schedule">
+
+      <div class="schedule-header">
+        <span class="section-eyebrow">Weekly Fixtures</span>
+        <h2>Weekly Games Schedule</h2>
+        <p>Fixtures, training sessions, and matches across all sports programs</p>
+      </div>
+
+      <div class="schedule-table">
+
+        <div class="table-head">
+          <span>Day</span>
+          <span>Sport</span>
+          <span>Time</span>
+          <span>Venue</span>
+          <span>Status</span>
+        </div>
+
+        <div class="table-row">
+          <span class="col-day">Monday</span>
+          <span class="col-sport"><span class="sport-icon">🏈</span> Football Training</span>
+          <span class="col-time">08:00 AM</span>
+          <span class="col-venue">Main Stadium</span>
+          <span class="col-status"><span class="status-badge open">Open</span></span>
+        </div>
+
+        <div class="table-row">
+          <span class="col-day">Tuesday</span>
+          <span class="col-sport"><span class="sport-icon">🏐</span> Volleyball Match</span>
+          <span class="col-time">10:00 AM</span>
+          <span class="col-venue">Indoor Court</span>
+          <span class="col-status"><span class="status-badge open">Open</span></span>
+        </div>
+
+        <div class="table-row">
+          <span class="col-day">Wednesday</span>
+          <span class="col-sport"><span class="sport-icon">🥋</span> Taekwondo Session</span>
+          <span class="col-time">02:00 PM</span>
+          <span class="col-venue">Martial Arts Hall</span>
+          <span class="col-status"><span class="status-badge limited">Limited</span></span>
+        </div>
+
+        <div class="table-row">
+          <span class="col-day">Thursday</span>
+          <span class="col-sport"><span class="sport-icon">🏅</span> Judo Training</span>
+          <span class="col-time">04:00 PM</span>
+          <span class="col-venue">Combat Arena</span>
+          <span class="col-status"><span class="status-badge open">Open</span></span>
+        </div>
+
+        <div class="table-row">
+          <span class="col-day">Friday</span>
+          <span class="col-sport"><span class="sport-icon">🤼</span> Wrestling Practice</span>
+          <span class="col-time">05:00 PM</span>
+          <span class="col-venue">Training Field B</span>
+          <span class="col-status"><span class="status-badge full">Full</span></span>
+        </div>
+
+      </div>
+
+      <p class="table-note">
+        🔄 Schedule updated weekly. <a href="book-online.html">Book your slot →</a>
+      </p>
+
+    </section>
+
+  </main>
+
+  <!-- ================= MODERN FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h2 class="footer-logo">SRC Sports Academy</h2>
+        <p>SRC Sports Academy develops champions through professional coaching, competitive sports, and community engagement.</p>
+        <div class="footer-contact-item">📍 Pentecost University, Accra Ghana</div>
+        <div class="footer-contact-item">📞 +233 590 638 265</div>
+        <div class="footer-contact-item">✉ info@srcsportsacademy.edu</div>
+      </div>
+      <div class="footer-links">
+        <h3>Company</h3>
+        <a href="about.html">About Us</a>
+        <a href="events.html">Events</a>
+        <a href="blog.html">News</a>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+      <div class="footer-links">
+        <h3>Services</h3>
+        <a href="new-activities.html">Sports Programs</a>
+        <a href="book-online.html">Book Training</a>
+        <a href="register.html">Register</a>
+        <a href="#">Community Programs</a>
+      </div>
+      <div class="footer-links">
+        <h3>Support</h3>
+        <a href="#">Contact Us</a>
+        <a href="#">FAQs</a>
+        <a href="#">Help Center</a>
+        <a href="#">Feedback</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="social-icons">
+        <a href="#">f</a>
+        <a href="#">X</a>
+        <a href="#">📷</a>
+        <a href="#">💬</a>
+      </div>
+      <p>© 2026 SRC Sports Academy. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-3.6.0.min.js"><\/script>')</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.0/dist/vanilla-tilt.min.js"></script>
+
+  <!-- Slider script -->
+  <script>
+    const track = document.getElementById('track');
+    const dots  = document.querySelectorAll('#dots span');
+    const cards = document.querySelectorAll('.schedule-card');
+    let current = 0;
+
+    function goTo(index) {
+      current = Math.max(0, Math.min(index, cards.length - 1));
+      const cardW = cards[0].offsetWidth + 24; // gap
+      track.style.transform = `translateX(-${current * cardW}px)`;
+      dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    }
+
+    document.querySelector('.nav-prev').addEventListener('click', () => goTo(current - 1));
+    document.querySelector('.nav-next').addEventListener('click', () => goTo(current + 1));
+    dots.forEach((d, i) => d.addEventListener('click', () => goTo(i)));
+  </script>
+
+  <script src="app.js"></script>
+</body>
+</html>

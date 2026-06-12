@@ -1,0 +1,69 @@
+/* Shared styles: header, hamburger, and mobile utilities */
+
+/* Prevent horizontal scroll across the site */
+html, body { overflow-x: hidden; }
+
+/* NAV TOGGLE (HAMBURGER) */
+.nav-toggle{
+  display:none;
+  background:transparent;
+  border:0;
+  padding:8px;
+  cursor:pointer;
+  align-items:center;
+  justify-content:center;
+}
+.nav-toggle span{
+  display:block;
+  width:22px;
+  height:3px;
+  background:#0f6df1;
+  border-radius:3px;
+  transition:transform .25s ease, opacity .2s ease;
+}
+.nav-toggle.open span:nth-child(1){
+  transform: translateY(6px) rotate(45deg);
+}
+.nav-toggle.open span:nth-child(2){
+  opacity:0;
+}
+.nav-toggle.open span:nth-child(3){
+  transform: translateY(-6px) rotate(-45deg);
+}
+body.nav-open{ overflow:hidden; }
+
+/* Mobile menu and hero adjustments */
+@media(max-width:720px){
+  .nav-toggle{ display:flex; margin-left:auto; z-index:1002; }
+  .site-nav{
+    position:fixed;
+    top:76px;
+    left:0;
+    right:0;
+    background:rgba(2,13,29,.96);
+    flex-direction:column;
+    align-items:center;
+    padding:1rem 0;
+    gap:.75rem;
+    max-height:0;
+    overflow:hidden;
+    opacity:0;
+    transform:translateY(-10px);
+    transition:.35s ease;
+    z-index:1001;
+  }
+  .site-nav.active{ max-height:420px; opacity:1; transform:translateY(0); }
+  .site-nav a{ color:white; display:block; width:100%; text-align:center; padding:12px 20px; font-size:18px; }
+  .site-nav .track-btn, .site-nav a.track-btn{ background:#f97316; color:#fff !important; padding:10px 20px; border-radius:999px; margin:8px 0; }
+
+  /* Hide heavy background video on small screens for layout and performance */
+  .hero-video{ display:none !important; }
+
+  /* Header & hero adjustments for small screens */
+  .site-header{ padding:12px 20px; }
+  .brand a{ font-size:22px; }
+  .hero-section{ padding:3.5rem 1rem; align-items:center; }
+  .hero-copy{ max-width:92%; padding:1rem; }
+  .hero-copy h1{ font-size:clamp(1.6rem,7vw,2.2rem); line-height:1.08; }
+  .hero-actions input{ width:100%; }
+}

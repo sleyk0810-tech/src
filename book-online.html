@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Online | SRC Sports Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
+  <link rel="stylesheet" href="booking.css" />
+</head>
+<body>
+
+  <!-- ================= TOP INFO BAR ================= -->
+  <div class="top-bar">
+    <div class="top-left">
+      <span>📍 Pentecost University, Accra</span>
+      <span>🕒 Mon – Fri: 8:00 AM – 5:00 PM</span>
+    </div>
+    <div class="top-right">
+      <span>✉ info@srcsportsacademy.edu</span>
+      <span>📞 +233 590 638 265</span>
+    </div>
+  </div>
+
+  <!-- ================= MAIN HEADER ================= -->
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html">SRC Sports Academy</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="register.html">Register</a>
+      <a href="new-activities.html">New Activities</a>
+      <a href="book-online.html">Book Online</a>
+      <a href="events.html">Events</a>
+      <a href="book-online.html" class="track-btn">Join Now</a>
+    </nav>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main class="booking-main">
+
+    <!-- HERO -->
+    <section class="booking-hero">
+      <div class="hero-bg-shapes" aria-hidden="true">
+        <div class="bgs bgs-1"></div>
+        <div class="bgs bgs-2"></div>
+      </div>
+      <div class="hero-container">
+        <span class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          Reserve Your Session
+        </span>
+        <h1>Book a Training Session<br>with <em>SRC Sports Academy</em></h1>
+        <p class="subtext">
+          Select your sport, choose a time slot, and secure your training session instantly through our university booking system.
+        </p>
+        <div class="hero-trust">
+          <span class="trust-item">✅ Instant Confirmation</span>
+          <span class="trust-item">📧 Email Receipt</span>
+          <span class="trust-item">🔒 Secure Booking</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING CONTENT -->
+    <section class="booking-wrapper">
+
+      <!-- LEFT INFO CARD -->
+      <div class="info-card">
+
+        <div class="info-card-header">
+          <h2>How It Works</h2>
+          <p>Three simple steps to your session</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <strong>Pick your sport &amp; date</strong>
+              <p>Choose from our available programs and select your preferred session date.</p>
+            </div>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <strong>Fill your details</strong>
+              <p>Enter your name, email, and preferred time slot to complete the form.</p>
+            </div>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <strong>Get confirmed</strong>
+              <p>Receive an instant email confirmation with your session details.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Availability note -->
+        <div class="availability-note">
+          <span class="avail-dot"></span>
+          Sessions available Mon – Fri, 8 AM – 5 PM
+        </div>
+
+        <!-- Sport tags -->
+        <div class="sport-tags">
+          <span>🏈 Football</span>
+          <span>🏉 Rugby</span>
+          <span>🏐 Volleyball</span>
+          <span>🥋 Taekwondo</span>
+          <span>🏅 Judo</span>
+          <span>🤼 Wrestling</span>
+        </div>
+
+      </div>
+
+      <!-- FORM CARD -->
+      <div class="form-card">
+
+        <div class="form-card-header">
+          <h2>Reserve Your Slot</h2>
+          <p>Complete the form below to book your session</p>
+        </div>
+
+        <form id="booking-form" class="booking-form" novalidate>
+
+          <div class="field-row">
+
+            <div class="field-group">
+              <label for="booking-name">
+                <span class="field-icon">👤</span> Full Name
+              </label>
+              <input type="text" id="booking-name" name="booking-name" placeholder="Your full name" required />
+            </div>
+
+            <div class="field-group">
+              <label for="booking-email">
+                <span class="field-icon">✉</span> Email Address
+              </label>
+              <input type="email" id="booking-email" name="booking-email" placeholder="you@example.com" required />
+            </div>
+
+          </div>
+
+          <div class="field-group">
+            <label for="booking-sport">
+              <span class="field-icon">🏟️</span> Sport
+            </label>
+            <div class="select-wrap">
+              <select id="booking-sport" name="booking-sport" required>
+                <option value="">Select a sport</option>
+                <option>Football</option>
+                <option>Rugby</option>
+                <option>Volleyball</option>
+                <option>Taekwondo</option>
+                <option>Judo</option>
+                <option>Wrestling</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field-grid">
+            <div class="field-group">
+              <label for="session-date">
+                <span class="field-icon">📅</span> Date
+              </label>
+              <input type="date" id="session-date" name="session-date" required />
+            </div>
+            <div class="field-group">
+              <label for="time-slot">
+                <span class="field-icon">🕒</span> Time Slot
+              </label>
+              <div class="select-wrap">
+                <select id="time-slot" name="time-slot" required>
+                  <option>08:00 AM</option>
+                  <option>10:00 AM</option>
+                  <option>02:00 PM</option>
+                  <option>05:00 PM</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="field-group captcha-group">
+            <label for="booking-captcha">
+              <span class="field-icon">🔐</span>
+              Verification: <span id="booking-captcha-challenge">What is 4 + 5?</span>
+            </label>
+            <input type="text" id="booking-captcha" name="booking-captcha" placeholder="Your answer" required autocomplete="off" />
+          </div>
+
+          <button type="submit" class="cta">
+            <span>Confirm Booking</span>
+            <span class="cta-arrow">→</span>
+          </button>
+
+          <p id="booking-message" class="booking-message"></p>
+
+          <p class="form-note">🔒 Your data is safe. We never share your information.</p>
+
+        </form>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ================= MODERN FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h2 class="footer-logo">SRC Sports Academy</h2>
+        <p>SRC Sports Academy develops champions through professional coaching, competitive sports, and community engagement.</p>
+        <div class="footer-contact-item">📍 Pentecost University, Accra Ghana</div>
+        <div class="footer-contact-item">📞 +233 590 638 265</div>
+        <div class="footer-contact-item">✉ info@srcsportsacademy.edu</div>
+      </div>
+      <div class="footer-links">
+        <h3>Company</h3>
+        <a href="about.html">About Us</a>
+        <a href="events.html">Events</a>
+        <a href="blog.html">News</a>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+      <div class="footer-links">
+        <h3>Services</h3>
+        <a href="new-activities.html">Sports Programs</a>
+        <a href="book-online.html">Book Training</a>
+        <a href="register.html">Register</a>
+        <a href="#">Community Programs</a>
+      </div>
+      <div class="footer-links">
+        <h3>Support</h3>
+        <a href="#">Contact Us</a>
+        <a href="#">FAQs</a>
+        <a href="#">Help Center</a>
+        <a href="#">Feedback</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="social-icons">
+        <a href="#">f</a>
+        <a href="#">X</a>
+        <a href="#">📷</a>
+        <a href="#">💬</a>
+      </div>
+      <p>© 2026 SRC Sports Academy. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-3.6.0.min.js"><\/script>')</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.0/dist/vanilla-tilt.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
